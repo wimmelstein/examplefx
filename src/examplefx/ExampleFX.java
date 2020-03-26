@@ -1,6 +1,6 @@
 package examplefx;
 
-import examplefx.layout.StandAloneMainWindow;
+import examplefx.layout.UserView;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -54,7 +54,7 @@ public class ExampleFX extends Application {
 			@Override
 			public void handle(ActionEvent arg0) {
 				if (userInput != null) {
-					scene = new Scene(new StandAloneMainWindow(), 650, 400);
+					scene = new Scene(new UserView(), 650, 400);
 					window.setScene(scene);
 				}			
 			}

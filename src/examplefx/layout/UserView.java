@@ -16,7 +16,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 
-public class StandAloneMainWindow extends VBox {
+public class UserView extends VBox {
 	
 	ObservableList<User> users = FXCollections.observableArrayList();
 	TableView<User> tableView = new TableView<>();
@@ -26,7 +26,7 @@ public class StandAloneMainWindow extends VBox {
 			
 	
 	@SuppressWarnings("unchecked")
-	public StandAloneMainWindow() {
+	public UserView() {
 		
 
 		setPadding(new Insets(10, 10, 10, 10));
